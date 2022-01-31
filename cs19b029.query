@@ -1,0 +1,59 @@
+create mytab 2 
+int a 
+string b
+insert into mytab values 12,"naman"
+insert into mytab values 13,"abcd"
+create mytab2 3
+int a
+string b
+string c
+insert into mytab2 values 12,"naman","sharma"
+insert into mytab2 values 13,"abcd","efgh"
+create mytab3 4
+int a1
+string b1
+string c1
+int d1
+insert into mytab3 values 12,"naman","sharma",20
+insert into mytab3 values 13,"abcd","efgh",30
+create mytab4 2 
+int a 
+string b
+insert into mytab4 values 12,"naman"
+insert into mytab4 values 13,"abcd"
+create mytab5 3
+int a
+string b
+string c
+insert into mytab5 values 12,"naman","sharma"
+insert into mytab5 values 13,"abcd","efgh"
+create mytab6 4
+int a1
+string b1
+string c1
+int d1
+insert into mytab6 values 12,"naman","sharma",20
+insert into mytab6 values 13,"abcd","efgh",30
+create mytab7 2 
+int a 
+string b
+insert into mytab7 values 12,"naman"
+insert into mytab7 values 13,"abcd"
+create mytab8 3
+int a
+string b
+string c
+insert into mytab8 values 12,"naman","sharma"
+insert into mytab8 values 13,"abcd","efgh"
+create mytab9 4
+int a1
+string b1
+string c1
+int d1
+insert into mytab9 values 12,"naman","sharma",20
+insert into mytab9 values 13,"abcd","efgh",30
+create mytab10 2 
+int a 
+string b
+insert into mytab10 values 12,"naman"
+insert into mytab10 values 13,"abcd"

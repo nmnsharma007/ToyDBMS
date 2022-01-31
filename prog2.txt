@@ -1,2 +1,0 @@
-insert into mytab values 12,"kalidas"
-insert into mytab values 13,"abcd"

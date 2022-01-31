@@ -45,14 +45,13 @@ public class CS19B029 {
     public static void main(String[] args) {
        BufferedReader bReader;
        try {
-           bReader = new BufferedReader(new FileReader("prog1.txt"));
+           bReader = new BufferedReader(new FileReader("cs19b029.query"));
            String query = "";
            String contentLine = bReader.readLine();
            while(contentLine != null){
                 query += contentLine + "\n";
                 contentLine = bReader.readLine();// read the commands line by line
            }
-           System.out.println(query);
            QueryParser queryparser = new QueryParser();
            String code = queryparser.parser(query);
            BufferedWriter bWriter = new BufferedWriter(new FileWriter("cs19b029.query.code"));

@@ -3,12 +3,16 @@ add_attribute int a
 add_attribute string b
 save_tab mytab
 exists_tab mytab
+insert_into mytab 12,"naman"
+insert_into mytab 13,"abcd"
 create_table mytab2
 add_attribute int a
 add_attribute string b
 add_attribute string c
 save_tab mytab2
 exists_tab mytab2
+insert_into mytab2 12,"naman","sharma"
+insert_into mytab2 13,"abcd","efgh"
 create_table mytab3
 add_attribute int a1
 add_attribute string b1
@@ -16,3 +20,60 @@ add_attribute string c1
 add_attribute int d1
 save_tab mytab3
 exists_tab mytab3
+insert_into mytab3 12,"naman","sharma",20
+insert_into mytab3 13,"abcd","efgh",30
+create_table mytab4
+add_attribute int a
+add_attribute string b
+save_tab mytab4
+exists_tab mytab4
+insert_into mytab4 12,"naman"
+insert_into mytab4 13,"abcd"
+create_table mytab5
+add_attribute int a
+add_attribute string b
+add_attribute string c
+save_tab mytab5
+exists_tab mytab5
+insert_into mytab5 12,"naman","sharma"
+insert_into mytab5 13,"abcd","efgh"
+create_table mytab6
+add_attribute int a1
+add_attribute string b1
+add_attribute string c1
+add_attribute int d1
+save_tab mytab6
+exists_tab mytab6
+insert_into mytab6 12,"naman","sharma",20
+insert_into mytab6 13,"abcd","efgh",30
+create_table mytab7
+add_attribute int a
+add_attribute string b
+save_tab mytab7
+exists_tab mytab7
+insert_into mytab7 12,"naman"
+insert_into mytab7 13,"abcd"
+create_table mytab8
+add_attribute int a
+add_attribute string b
+add_attribute string c
+save_tab mytab8
+exists_tab mytab8
+insert_into mytab8 12,"naman","sharma"
+insert_into mytab8 13,"abcd","efgh"
+create_table mytab9
+add_attribute int a1
+add_attribute string b1
+add_attribute string c1
+add_attribute int d1
+save_tab mytab9
+exists_tab mytab9
+insert_into mytab9 12,"naman","sharma",20
+insert_into mytab9 13,"abcd","efgh",30
+create_table mytab10
+add_attribute int a
+add_attribute string b
+save_tab mytab10
+exists_tab mytab10
+insert_into mytab10 12,"naman"
+insert_into mytab10 13,"abcd"
