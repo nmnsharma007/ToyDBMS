@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class FileOperations {
 
+    // write the table contents to a file in form of bytes
     public void writeToFile(Table table){
         try {
             FileOutputStream f = new FileOutputStream(new File(table.tabname+".db"));
@@ -19,6 +20,8 @@ public class FileOperations {
         }
     }
 
+    // read the byte array from a file and convert into object again to 
+    // be operated on
     public Table readFromFile(String tablename){
         Table table = null;
         try{
