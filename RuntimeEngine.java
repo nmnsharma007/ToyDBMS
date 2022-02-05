@@ -30,16 +30,35 @@ public class RuntimeEngine{
     // execute the insert into statement
     private void insertInto(String token){
         String [] arr = token.split(" ");
-        String tableName = arr[1];
-
-    }
-
-    // method to save the table to memory
-    private void saveTable(Table table){
+        String tablename = arr[1];
+        Table table = loadTable(tablename);
         
     }
 
-    // execute the intermediate code
+    // method to save the table to file
+    private void saveTable(Table table){
+        FileOperations fOperations = new FileOperations();
+        fOperations.writeToFile(table);
+    }
+
+    // method to load the table from file
+    private Table loadTable(String tablename){
+        FileOperations fOperations = new FileOperations();
+        return fOperations.readFromFile(tablename);
+    }
+
+    // print if the table exists and is saved to the memory
+    private void existTable(String token){
+        String tablename = token.split(" ")[1];
+        if(loadTable(tablename) != null){
+            System.out.println("Table exists");
+        }
+        else{
+            System.out.println("Table doesn't exist");
+        }
+    }
+
+    // execute the intermediate code line by line
     public void executeCode(String code){
         StringTokenizer sTokenizer = new StringTokenizer(code,"\n");
         Table tb = null;
@@ -58,7 +77,7 @@ public class RuntimeEngine{
                 saveTable(tb);
             }
             else if(token.startsWith("exists_tab")){
-
+                existTable(token);
             }
         }
     }
