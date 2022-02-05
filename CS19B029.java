@@ -11,14 +11,11 @@ public class CS19B029 {
         String code = "";
         try {
             bReader = new BufferedReader(new FileReader(progfile));
-            String query = "";
             String contentLine = bReader.readLine();
             while(contentLine != null){
-                query += contentLine + "\n";
+                code += contentLine;
                 contentLine = bReader.readLine();// read the commands line by line
             }
-            QueryParser queryparser = new QueryParser();
-            code = queryparser.parser(query);
             bReader.close();
         }
         catch(IOException e){
@@ -28,7 +25,7 @@ public class CS19B029 {
     }
 
     public static void main(String[] args) {
-       String intermediateCode = getQuery("cs19b029.query");// get the query string from a file
+       String intermediateCode = getQuery("cs19b029.code");// get the query string from a file
        RuntimeEngine engine = new RuntimeEngine();// get the runtime engine
        engine.executeCode(intermediateCode);// execute the steps of the intermediate code
        // print the contents of the tables
