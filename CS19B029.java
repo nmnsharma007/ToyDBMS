@@ -31,6 +31,7 @@ public class CS19B029 {
        String intermediateCode = getQuery("cs19b029.query");// get the query string from a file
        RuntimeEngine engine = new RuntimeEngine();// get the runtime engine
        engine.executeCode(intermediateCode);// execute the steps of the intermediate code
+       // print the contents of the tables
        for(int i = 1; i <= 10;++i){
             System.out.println(engine.loadTable("mytab" + i).toString());
        }
